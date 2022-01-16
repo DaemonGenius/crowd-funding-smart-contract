@@ -1,6 +1,6 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider')
 const Web3 = require('web3')
-const compiledFactory = require('./build/CrowdFundFactory.json')
+const compiledFactory = require('./build/CrowdFundFactory.json');
 
 const provider = new HDWalletProvider(
   'arrange security long brush blur defense emerge decorate oil you hobby flash',
@@ -21,7 +21,7 @@ const deploy = async () => {
 
   console.log('Contract deployed to', result.options.address)
 
-  // contract -> 0x9BAB2d6B0C4FA50AaA0BB248744573FE6Cd9Aed4
+  // contract -> 0x14a78ce80582A65A5862DE647808Ea1Cf34a295E
   provider.engine.stop()
 }
 deploy()
